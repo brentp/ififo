@@ -1,7 +1,7 @@
 IFifo
 =====
 
-[![GoDoc] (https://godoc.org/github.com/brentp/ififo?status.png)](https://godoc.org/github.com/brentp/fifo)
+[![GoDoc] (https://godoc.org/github.com/brentp/ififo?status.png)](https://godoc.org/github.com/brentp/ififo)
 
 
 This is a fast, simple, thread-safe FIFO built with a channel. In my tests, this is faster than a Mutex
