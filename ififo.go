@@ -9,7 +9,7 @@ type IFifo struct {
 	constructor func() interface{}
 }
 
-// NewIfifo accepts a queue size and an initialization function that is called
+// NewIFifo accepts a queue size and an initialization function that is called
 // when the queue is empty.
 func NewIFifo(max int, init func() interface{}) *IFifo {
 	return &IFifo{make(chan interface{}, max), init}
