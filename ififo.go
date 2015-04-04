@@ -1,6 +1,6 @@
 // Package ififo provides a fast, sized, generic thread-safe FIFO.
 // This is useful for re-using structs to reduce load on the garbarge collector
-// and, unlink sync.Pool, it is longer-lived.
+// and, unlike sync.Pool, it is longer-lived.
 package ififo
 
 // IFifo holds the queue and a default constructor when the queue is empty.
