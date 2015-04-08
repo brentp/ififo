@@ -15,7 +15,7 @@ func (s *ISuite) TestNewFifo(c *C) {
 	f := NewIFifo(100, func() interface{} { return 22 })
 	c.Assert(cap(f.cache), Equals, 100)
 	c.Assert(len(f.cache), Equals, 0)
-	c.Assert(f.constructor(), Equals, 22)
+	c.Assert(f.New(), Equals, 22)
 }
 
 func (s *ISuite) TestFifoPut(c *C) {
